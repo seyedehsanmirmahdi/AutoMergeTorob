@@ -77,7 +77,7 @@
     return d[m][n];
   }
 
-  function compareName(referenceName, targetName, threshold = 80) {
+  function compareName(referenceName, targetName, threshold = 20) {
     if (!referenceName || !targetName) return false;
     const ref = normalizeText(referenceName);
     const target = normalizeText(targetName);
@@ -89,7 +89,7 @@
   }
 
   // --- حلقه اصلی ---
-  for (let i = 0; i < 10; i++) {
+  for (let i = 0; i < 4000; i++) {
     console.log(`--- Run #${i + 1} ---`);
     await sleep(200);
 
